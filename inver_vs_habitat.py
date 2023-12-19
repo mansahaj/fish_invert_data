@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load your dataset
-file_path = 'fish_inverts.csv'  # Make sure to update this to your actual file path
+
+file_path = 'fish_inverts.csv'
 data = pd.read_csv(file_path)
 
 # Convert 'date' to a datetime type
@@ -26,5 +26,5 @@ plt.xlabel('Date')
 plt.ylabel('Number of Observations')
 plt.legend(title='Habitat')
 plt.xticks(rotation=45)
-plt.tight_layout()  # This adjusts the plot to ensure everything fits without overlapping
+plt.tight_layout() 
 plt.show()
