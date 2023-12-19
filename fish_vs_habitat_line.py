@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load your dataset
-file_path = 'fish_inverts.csv'  # Make sure to update this to your actual file path
+
+file_path = 'fish_inverts.csv'
 data = pd.read_csv(file_path)
 
 # Convert 'date' to a datetime type
