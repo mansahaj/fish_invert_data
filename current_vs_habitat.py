@@ -1,15 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load your dataset
-file_path = 'fish_inverts.csv'  # Make sure to update this to your actual file path
+
+file_path = 'fish_inverts.csv' 
 data = pd.read_csv(file_path)
 
 # Filter out rows where observations are invertebrates
 invert_data = data[data['fish_invert'] == 'invert']
-
-# Assuming 'swell_current' column contains the information about current
-# and 'habitat' column contains the habitat data.
 
 # Group by 'habitat' and 'swell_current', and count the number of invertebrate observations
 habitat_current_counts = invert_data.groupby(['habitat', 'swell_current']).size().reset_index(name='counts')
