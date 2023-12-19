@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load your dataset
-file_path = 'fish_inverts.csv'  # Replace with the path to your CSV file
+
+file_path = 'fish_inverts.csv'
 data = pd.read_csv(file_path)
 
 # Ensure that 'date' is a datetime column
