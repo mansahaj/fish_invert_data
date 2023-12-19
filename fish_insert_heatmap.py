@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Loading the data (replace 'file_path' with the path to your CSV file)
+# Loading the data
 file_path = 'path_to_your_file/fish_inverts.csv'
 data = pd.read_csv(file_path)
 
